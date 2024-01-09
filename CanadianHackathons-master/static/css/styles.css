@@ -17,6 +17,10 @@ body.dark-mode {
     color: #ffffff;
 }
 
+a {
+    text-decoration: none;
+}
+
 .text-body-secondary {
     --bs-text-opacity: 1;
     color: rgb(242 242 242 / 75%)!important;
@@ -125,6 +129,14 @@ body {
 #hackathonList .hacker-card .card-body {
     padding: 20px; /* Add padding to card body */
 }
+#hackathonList .hacker-card .card-header{
+    padding: 20px; /* Add padding to card body */
+    background-image: linear-gradient(90deg, #ff8c00, #ff0080, #ff8c00);
+}
+#hackathonList .hacker-card .card-title{
+    
+    color: white;
+}
 
 #hackathonList .hacker-card .list-group-item {
     background-color: #ffffff; /* Dark background for list items */
@@ -134,6 +146,7 @@ body {
 #hackathonList .hacker-card .card-link {
     color: #ffffff; /* White text for card links */
     transition: color 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 #hackathonList .hacker-card .card-link:hover {
@@ -186,3 +199,25 @@ body {
 }
 
 /* End of styles.css */
+/* styles.css */
+
+/* Your existing styles */
+
+/* Styles for buttons */
+.btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.btn-primary {
+    background-color: #0080ff;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #f60cc3;
+    color: #ffffff;
+    border: none;
+}

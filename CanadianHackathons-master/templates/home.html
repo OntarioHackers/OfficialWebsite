@@ -27,8 +27,9 @@
           {% if i[0] == "" %}
           {% else %}
             <div class="col col-lg-3 col-md-6 p-3">
-              <div class="card hacker-card" style="width: 18rem;">
-                <div class="card-body">
+              <a href="{{i[1]}}" class="card-link">
+              <div class="card hacker-card" style="width: 18rem;" ref="{{i[1]}}">
+                <div class="card-header">
                   <h3 class="card-title">{{ i[0] }}</h3>
                 </div>
                 <ul class="list-group list-group-flush">
@@ -40,11 +41,9 @@
                   {% endif %}
                   <li class="list-group-item">Location: {{ i[5] }}</li>
                 </ul>
-                <div class="card-body">
-                  <a href="{{i[1]}}" class="card-link btn btn-primary ">Website</a>
-                </div>
+                
               </div>
-            </div>
+            </div></a>
           {% endif %}
         {% endfor %}
       </div>
